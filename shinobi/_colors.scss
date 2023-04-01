@@ -1,0 +1,14 @@
+// loop through the $colors map from _variables.scss file
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  // light variations
+  @for $i from 1 through 9 {
+  }
+}
